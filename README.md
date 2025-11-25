@@ -10,11 +10,11 @@ Descripción
 ----------
 
 Funcionalidades:
--Consultar el estado del ascensor en tiempo real.
--Mostrar lista de solicitudes pendientes.
--Solicitar un piso mediante input y botón.
--Control manual del ascensor: abrir/cerrar puertas, iniciar/detener.
--Actualización automática del panel cada segundo.
+Consultar el estado del ascensor en tiempo real.
+Mostrar lista de solicitudes pendientes.
+Solicitar un piso mediante input y botón.
+Control manual del ascensor: abrir/cerrar puertas, iniciar/detener.
+Actualización automática del panel cada segundo.
 
 
 Requisitos:
