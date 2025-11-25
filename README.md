@@ -5,43 +5,28 @@
 
 
 
-📝 Descripción
+📝 Descripción:
 
 Este proyecto simula y controla un ascensor mediante un panel web.
+-Frontend: AngularJS 1.x.
+-Backend: API en .NET que gestiona el estado del ascensor y las solicitudes de pisos.
+-Funcionalidades principales:
+-Visualizar el piso actual y la dirección del movimiento.
+-Consultar el estado de las puertas.
+-Revisar solicitudes pendientes y atenderlas.
+-Control manual del ascensor: abrir/cerrar puertas, iniciar/detener, solicitar piso.
 
-Frontend: AngularJS 1.x.
-
-Backend: API en .NET que gestiona el estado del ascensor y las solicitudes de pisos.
-
-Funcionalidades principales:
-
-Visualizar el piso actual y la dirección del movimiento.
-
-Consultar el estado de las puertas.
-
-Revisar solicitudes pendientes y atenderlas.
-
-Control manual del ascensor: abrir/cerrar puertas, iniciar/detener, solicitar piso.
-
-⚙️ Funcionalidades
-
+⚙️ Funcionalidades:
 Consultar el estado del ascensor en tiempo real.
-
 Mostrar la lista de solicitudes pendientes.
-
 Solicitar un piso mediante input y botón.
-
 Control manual: abrir/cerrar puertas, iniciar/detener ascensor.
-
 Actualización automática del panel cada segundo.
 
-🖥️ Requisitos
-
-Navegador moderno: Chrome, Edge, Firefox.
-
-Backend .NET corriendo en: https://localhost:7023.
-
-AngularJS cargado desde CDN, no requiere instalación adicional.
+🖥️ Requisitos:
+-Navegador moderno: Chrome, Edge, Firefox.
+-Backend .NET corriendo en: https://localhost:7023.
+-AngularJS cargado desde CDN, no requiere instalación adicional.
 
 🗄️ Base de Datos
 
@@ -63,23 +48,16 @@ CREATE TABLE log_operaciones (
 🚀 Instalación y Ejecución
 
 Clonar repositorio:
-
 git clone https://github.com/usuario/proyecto-ascensor.git
 
 
 Backend .NET:
-
-Abrir el proyecto en Visual Studio.
-
-Ejecutar el backend en https://localhost:7023.
-
+-Abrir el proyecto en Visual Studio.
+-Ejecutar el backend en https://localhost:7023.
 Frontend AngularJS:
-
-Abrir el archivo index.html en VS Code.
-
-Usar la extensión Live Server para correr la interfaz web.
-
-Acceder al panel desde el navegador y comenzar a usar el ascensor.
+-Abrir el archivo index.html en VS Code.
+-Usar la extensión Live Server para correr la interfaz web.
+-Acceder al panel desde el navegador y comenzar a usar el ascensor.
 
 📹 Guía de Uso
 https://drive.google.com/file/d/1aR5zTF8NBzYgd1w--HRg8rdqKCypyKCx/view?usp=drive_link
