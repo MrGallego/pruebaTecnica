@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ascensorApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel del Ascensor</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+  <script src="ascensor.js"></script>
+  <style>
+    button { margin: 2px; }
+    input { width: 50px; }
+  </style>
+</head>
+<body ng-controller="AscensorController as ctrl">
+
+  <h2>Panel del Ascensor</h2>
+
+ <div ng-if="ctrl.estado">
+  <p><strong>Piso actual:</strong> {{ ctrl.estado.pisoActual }}</p>
+  <p><strong>Dirección:</strong> {{ ctrl.estado.direccion }}</p>
+  <p><strong>Movimiento:</strong> {{ ctrl.estado.enMovimiento ? 'Sí' : 'No' }}</p>
+  <p><strong>Puertas:</strong> {{ ctrl.estado.puertasAbiertas ? 'Abiertas' : 'Cerradas' }}</p>
+
+  <hr>
+
+  <h3>Solicitar piso</h3>
+  <input type="number" ng-model="ctrl.pisoSolicitado" min="1" max="20">
+  <button ng-click="ctrl.solicitarPiso()">Solicitar</button>
+
+  <hr>
+
+  <h3>Controles manuales</h3>
+  <button ng-click="ctrl.abrir()">Abrir puertas</button>
+  <button ng-click="ctrl.cerrar()">Cerrar puertas</button>
+  <button ng-click="ctrl.iniciar()">Iniciar</button>
+  <button ng-click="ctrl.detener()">Detener</button>
+
+  <hr>
+
+  <h3>Solicitudes pendientes</h3>
+  <ul>
+    <li ng-repeat="s in ctrl.solicitudes">
+      Piso solicitado: {{ s.piso }} — Fecha: {{ s.fechaSolicitud | date:'shortTime' }}
+    </li>
+  </ul>
+</div>
+
+<div ng-if="!ctrl.estado">
+  <p>Cargando estado del ascensor...</p>
+</div>
+
+</body>
+</html>
