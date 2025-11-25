@@ -1,9 +1,4 @@
-🚀 Proyecto Ascensor
-
-
-
-
-
+Proyecto Ascensor
 
 📝 Descripción:
 
@@ -16,7 +11,7 @@ Este proyecto simula y controla un ascensor mediante un panel web.
 -Revisar solicitudes pendientes y atenderlas.
 -Control manual del ascensor: abrir/cerrar puertas, iniciar/detener, solicitar piso.
 
-⚙️ Funcionalidades:
+Funcionalidades:
 Consultar el estado del ascensor en tiempo real.
 Mostrar la lista de solicitudes pendientes.
 Solicitar un piso mediante input y botón.
@@ -45,7 +40,7 @@ CREATE TABLE log_operaciones (
     fecha DATE DEFAULT SYSDATE
 );
 
-🚀 Instalación y Ejecución
+Instalación y Ejecución
 
 Clonar repositorio:
 git clone https://github.com/usuario/proyecto-ascensor.git
