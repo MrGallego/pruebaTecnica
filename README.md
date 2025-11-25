@@ -55,9 +55,9 @@ Backend .NET:
 -Abrir el proyecto en Visual Studio.
 -Ejecutar el backend en https://localhost:7023.
 Frontend AngularJS:
--Abrir el archivo index.html en VS Code.
--Usar la extensión Live Server para correr la interfaz web.
--Acceder al panel desde el navegador y comenzar a usar el ascensor.
+Abrir el archivo index.html en VS Code.
+Usar la extensión Live Server para correr la interfaz web.
+Acceder al panel desde el navegador y comenzar a usar el ascensor.
 
 📹 Guía de Uso
 https://drive.google.com/file/d/1aR5zTF8NBzYgd1w--HRg8rdqKCypyKCx/view?usp=drive_link
